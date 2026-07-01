@@ -372,7 +372,7 @@ export default function App() {
             <div className="bg-white rounded-3xl border border-slate-100 p-16 text-center shadow-xs">
               <span className="text-lg font-bold text-slate-700 block mb-2">No audio gear found</span>
               <p className="text-slate-400 text-xs max-w-sm mx-auto mb-6">
-                We couldn't match your search terms with our standard acoustics list. Try typing "Y168A", "charger" or "earbud".
+                We couldn't match your search terms with our standard acoustics list. Try typing "Muse", "Horizon", or "Turntable".
               </p>
               <button
                 onClick={() => { setSelectedCategory('all'); setSearchQuery(''); }}
@@ -510,8 +510,8 @@ export default function App() {
                 <div className="absolute inset-4 rounded-full border-2 border-dashed border-blue-200 animate-spin duration-10000 opacity-60" />
                 
                 <img
-                  src={PRODUCTS[0].image} // Obsidian Earbuds Y168A
-                  alt="Obsidian Earbud Detail Close-up"
+                  src={PRODUCTS[0].image} // Crescendo Muse Premium ANC Earbuds
+                  alt="Crescendo Muse Premium Earbud Detail Close-up"
                   className="w-48 h-48 md:w-56 md:h-56 object-contain z-10 transform hover:scale-110 transition-transform duration-500 select-none filter drop-shadow-2xl"
                   referrerPolicy="no-referrer"
                 />

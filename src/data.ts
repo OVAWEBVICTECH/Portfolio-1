@@ -6,16 +6,24 @@ import proImg from './assets/images/pro_x168a_1782901354641.jpg';
 import speakerImg from './assets/images/speaker_p168a_1782901366265.jpg';
 import heroImg from './assets/images/crescendo_hero_1782901331827.jpg';
 
+// Newly generated realistic products images
+import turntableImg from './assets/images/turntable_t9_1782905600675.jpg';
+import soundbarImg from './assets/images/soundbar_s50_1782905615003.jpg';
+import dacImg from './assets/images/dac_ampli_a1_1782905630093.jpg';
+import nomadImg from './assets/images/nomad_mini_green_1782905641186.jpg';
+import magchargeImg from './assets/images/magcharge_y12_1782905673782.jpg';
+import ganPowerImg from './assets/images/gan_power_w30_1782905686366.jpg';
+
 export { heroImg };
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'earbud-y168a',
-    name: 'Earbud Y168A',
+    id: 'crescendo-muse-earbuds',
+    name: 'Crescendo Muse Premium ANC Earbuds',
     category: 'earbuds',
-    price: 270.00,
+    price: 279.00,
     rating: 4.9,
-    reviewCount: 124,
+    reviewCount: 184,
     image: earbudImg,
     colors: [
       { name: 'Obsidian Black', hex: '#111827' },
@@ -23,22 +31,22 @@ export const PRODUCTS: Product[] = [
       { name: 'Midnight Violet', hex: '#4C1D95' }
     ],
     specs: {
-      driver: '11mm Dynamic Driver with Graphene Diaphragm',
-      battery: 'Up to 8 hours (32 hours total with case)',
-      bluetooth: 'Bluetooth® 5.3 with LE Audio Support',
+      driver: '11mm Custom Graphene Dynamic Drivers',
+      battery: 'Up to 8 hours playback (32 hours total with case)',
+      bluetooth: 'Bluetooth® 5.3 with LE Audio & LDAC support',
       waterproof: 'IPX7 Sweat & Water Resistant',
       weight: '4.8g per earbud'
     },
-    description: 'Immerse yourself in unrivaled acoustic clarity. Features Active Ambient Cancellation (AAC), high-definition codec support (LDAC/AAC), and ergonomic touch controls.',
+    description: 'Immerse yourself in unrivaled acoustic clarity. Features high-fidelity Active Noise Cancellation (ANC), ambient pass-through mode, customizable touch sensors, and dual-mic beamforming clarity.',
     badge: 'Best Seller'
   },
   {
-    id: 'pro-x168a',
-    name: 'Pro X168A',
+    id: 'crescendo-horizon-headphones',
+    name: 'Crescendo Horizon Over-Ear ANC Headphones',
     category: 'headphones',
-    price: 250.00,
+    price: 349.00,
     rating: 4.8,
-    reviewCount: 98,
+    reviewCount: 142,
     image: proImg,
     colors: [
       { name: 'Charcoal Matte', hex: '#1F2937' },
@@ -46,22 +54,22 @@ export const PRODUCTS: Product[] = [
       { name: 'Champagne Gold', hex: '#D97706' }
     ],
     specs: {
-      driver: '40mm Custom-Engineered Dynamic Drivers',
+      driver: '40mm Custom-Engineered Dynamic Transducers',
       battery: 'Up to 45 hours with ANC Off (30 hours ANC On)',
-      bluetooth: 'Bluetooth® 5.3 with Multi-Point Connection',
+      bluetooth: 'Bluetooth® 5.3 with Multipoint Dual-Connection',
       waterproof: 'IPX4 Splash Resistant',
-      weight: '245g ultra-lightweight design'
+      weight: '245g ultra-comfortable design'
     },
-    description: 'Over-ear mastery redefined. Delivering high-resolution audio, custom-tuned memory foam cushion earcups, and an advanced 4-microphone hybrid feedback ANC array.',
+    description: 'Over-ear acoustic mastery redefined. Delivering high-resolution studio playback, premium memory-foam plush earcups, and an advanced 4-microphone hybrid feedback ANC array.',
     badge: 'Premium Studio'
   },
   {
-    id: 'speaker-p168a',
-    name: 'Speaker P168A',
+    id: 'crescendo-soundwave-speaker',
+    name: 'Crescendo Soundwave Portable Hi-Fi Speaker',
     category: 'speakers',
-    price: 240.00,
+    price: 199.00,
     rating: 4.7,
-    reviewCount: 86,
+    reviewCount: 96,
     image: speakerImg,
     colors: [
       { name: 'Sleek Obsidian', hex: '#0F172A' },
@@ -71,50 +79,135 @@ export const PRODUCTS: Product[] = [
     specs: {
       driver: 'Dual 50mm Full-Range Drivers & Dual Passive Radiators',
       battery: 'Up to 24 hours playback time',
-      bluetooth: 'Bluetooth® 5.2 with 100ft range',
+      bluetooth: 'Bluetooth® 5.2 with 100ft Wireless Range',
       waterproof: 'IP67 Dustproof & Waterproof',
-      weight: '480g portable build'
+      weight: '480g rugged portable build'
     },
-    description: 'Room-filling, bidirectional spatial acoustics in a compact, rugged form factor. Outfitted with high-excursion bass radiators and an integrated speakerphone mic.',
+    description: 'Room-filling, bidirectional spatial acoustics in a compact, rugged form factor. Outfitted with dual high-excursion bass radiators and an integrated speakerphone mic.',
     badge: 'Spatial Audio'
   },
   {
-    id: 'wireless-charger-y12',
-    name: 'Wireless Charger Y12',
-    category: 'accessories',
-    price: 65.00,
-    rating: 4.6,
-    reviewCount: 45,
-    image: 'https://images.unsplash.com/photo-1622445262465-2481c4574875?q=80&w=600&auto=format&fit=crop',
+    id: 'crescendo-nomad-speaker',
+    name: 'Crescendo Nomad Mini Waterproof Speaker',
+    category: 'speakers',
+    price: 129.00,
+    rating: 4.8,
+    reviewCount: 64,
+    image: nomadImg,
     colors: [
-      { name: 'Carbon Black', hex: '#111827' },
+      { name: 'Forest Green', hex: '#15803D' },
+      { name: 'Slate Gray', hex: '#374151' }
+    ],
+    specs: {
+      driver: '45mm High-Excursion Driver & Dual Passive Woofers',
+      battery: 'Up to 15 hours continuous playback',
+      bluetooth: 'Bluetooth® 5.3 with Stereo Pairing Support',
+      waterproof: 'IP67 Floating & Waterproof',
+      weight: '320g ultra-light travel design'
+    },
+    description: 'Designed for the wild elements. A rugged cylindrical speaker wrapped in high-tensile fabric mesh, featuring a genuine leather utility wrist strap and powerful 360-degree acoustics.',
+    badge: 'Outdoor Ready'
+  },
+  {
+    id: 'crescendo-cinema-soundbar',
+    name: 'Crescendo Cinema S50 Dolby Soundbar',
+    category: 'speakers',
+    price: 449.00,
+    rating: 4.9,
+    reviewCount: 58,
+    image: soundbarImg,
+    colors: [
+      { name: 'Matte Charcoal', hex: '#1F2937' }
+    ],
+    specs: {
+      driver: '5-Speaker Acoustic Array with Dedicated Subwoofer Output',
+      battery: 'N/A (AC Powered Main Unit)',
+      bluetooth: 'Bluetooth® 5.2 & Wi-Fi AirPlay 2 Support',
+      waterproof: 'Dust-resistant grill',
+      power: '120W Peak Cinematic Output'
+    },
+    description: 'Transform your home theater. A low-profile, sleek soundbar supporting virtual Dolby Atmos 5.1 surround sound, integrated HDMI eARC for lossless digital connection, and a glowing visual status ring.',
+    badge: 'Cinema Series'
+  },
+  {
+    id: 'crescendo-spinette-turntable',
+    name: 'Crescendo Spinette T9 Belt-Driven Turntable',
+    category: 'accessories',
+    price: 549.00,
+    rating: 4.9,
+    reviewCount: 38,
+    image: turntableImg,
+    colors: [
+      { name: 'Walnut Wood', hex: '#78350F' },
+      { name: 'Piano Black', hex: '#030712' }
+    ],
+    specs: {
+      driver: 'Belt-Driven Low-Vibration DC Servo Motor',
+      bluetooth: 'Bluetooth® 5.2 Transmitter for Wireless Playback',
+      weight: '5.2kg solid dampening wooden base',
+      power: 'Built-in Switchable Pre-amplifier'
+    },
+    description: 'A masterpiece blend of warmth and technology. Built with a genuine walnut wood veneer casing, a static balanced tone-arm, pre-mounted premium Audio-Technica magnetic cartridge, and seamless wireless stream.',
+    badge: 'Audiophile Grade'
+  },
+  {
+    id: 'crescendo-amplifi-dac',
+    name: 'Crescendo Ampli-Fi A1 Hybrid Tube DAC/Amp',
+    category: 'accessories',
+    price: 349.00,
+    rating: 4.8,
+    reviewCount: 47,
+    image: dacImg,
+    colors: [
+      { name: 'Anodized Aluminum', hex: '#4B5563' }
+    ],
+    specs: {
+      driver: 'ESS Sabre ES9038Q2M 32-bit/384kHz DAC Chip',
+      bluetooth: 'Bluetooth® 5.1 with aptX HD & LDAC input',
+      weight: '820g aluminum desktop chassis',
+      power: '600mW High-Impedance Headphone Driver'
+    },
+    description: 'Bring studio-grade analog warmth to your digital audio workstation. Featuring a real glowing dual-triode vacuum tube pre-amplifier, a high-resolution 32-bit DAC, and a heavy-weight tactile metallic rotary dial.',
+    badge: 'Studio DAC'
+  },
+  {
+    id: 'crescendo-magcharge-pad',
+    name: 'Crescendo MagCharge 15W Wireless Pad',
+    category: 'accessories',
+    price: 69.00,
+    rating: 4.7,
+    reviewCount: 112,
+    image: magchargeImg,
+    colors: [
+      { name: 'Obsidian Dark', hex: '#111827' },
       { name: 'Chalk White', hex: '#F9FAFB' }
     ],
     specs: {
-      power: '15W Fast Qi Wireless Output',
-      weight: '110g slim profile',
-      bluetooth: 'N/A'
+      power: '15W Dynamic High-Speed Qi Power Profile',
+      weight: '110g premium slim structure',
+      waterproof: 'N/A'
     },
-    description: 'Sleek, anodized aluminum charging pad optimized for high-speed power delivery. Features temperature protection and automatic object detection.',
-    badge: 'Accessories'
+    description: 'A premium, precision-crafted wireless charger built with an anodized aluminum ring and a subtle glowing circular LED ring. Keeps your active earbuds and phones charging seamlessly with auto-foreign object detection.',
+    badge: 'Essential Gear'
   },
   {
-    id: 'accessories-brick-w30',
-    name: 'Wall Adapter W30',
+    id: 'crescendo-ganpower-plug',
+    name: 'Crescendo GaNPower 30W Fast Wall Plug',
     category: 'accessories',
-    price: 45.00,
+    price: 49.00,
     rating: 4.8,
-    reviewCount: 32,
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?q=80&w=600&auto=format&fit=crop',
+    reviewCount: 93,
+    image: ganPowerImg,
     colors: [
-      { name: 'Polar White', hex: '#F3F4F6' },
+      { name: 'Polar White', hex: '#F9FAFB' },
       { name: 'Obsidian Black', hex: '#111827' }
     ],
     specs: {
-      power: '30W GaN Fast Charger Port',
-      weight: '65g compact plug'
+      power: '30W USB-C Gallium Nitride Fast Delivery',
+      weight: '62g ultra-compact pocket block'
     },
-    description: 'Gallium Nitride (GaN) technology enables 30W charging speeds in a miniature, travel-ready folding prongs housing. Keeps your Crescendo hardware powered.',
+    description: 'Advance to ultra-compact charging speeds. Using cutting-edge Gallium Nitride (GaN) technology to output 30W power while maintaining an extremely cool profile and convenient foldable travel prongs.',
+    badge: 'Fast Charge'
   }
 ];
 
@@ -124,7 +217,7 @@ export const REVIEWS: Review[] = [
     userName: 'Alexander V.',
     rating: 5,
     date: '2026-06-25',
-    comment: 'The acoustic tuning on the Pro X168A is incredible. Bass is rich but never muddy, and the mid-tones have a spacious, live-room feel. Definitely rivals anything double its price.',
+    comment: 'The acoustic tuning on the Crescendo Horizon headphones is absolutely incredible. The sub-bass is rich and perfectly controlled, and the soundstage feels exceptionally wide. Definitely rivals audiophile gear double its price.',
     verified: true
   },
   {
@@ -132,15 +225,15 @@ export const REVIEWS: Review[] = [
     userName: 'Elena R.',
     rating: 5,
     date: '2026-06-18',
-    comment: 'The Y168A earbuds fit perfectly. I run with them every day and they never budge. The ambient sound cancellation is outstanding in noisy traffic.',
+    comment: 'The Muse earbuds fit comfortably and securely. I wear them during heavy workouts and running, and they never fall out. The active hybrid ANC isolation is breathtaking on noisy streets.',
     verified: true
   },
   {
     id: 'rev-3',
     userName: 'Marcus T.',
-    rating: 4,
+    rating: 5,
     date: '2026-06-10',
-    comment: 'Super sturdy build on the Speaker P168A. Sound remains extremely crisp even at maximum volume in outdoor pool parties. Great buy!',
+    comment: 'Superb craftsmanship on the Spinette T9. Pairing it with my Bluetooth speaker was effortless, and playing vinyl on that walnut body is an incredible aesthetic experience.',
     verified: true
   }
 ];
